@@ -60,12 +60,12 @@ if os.path.isfile('getmem_log.txt'):
     api_hash = data[1]
 
 else:
-    api_id = input('Enter api_id: ')
-    api_hash = input('Enter api_hash: ')
+    api_id = input('Enter API ID: ')
+    api_hash = input('Enter API HASH: ')
     with open('getmem_log.txt', 'w') as a:
         a.write(api_id + '\n' + api_hash)
 
-client = TelegramClient('anon', api_id, api_hash)
+client = TelegramClient('heiman', api_id, api_hash)
 
 async def main():
     # To Add Members.......
